@@ -513,8 +513,4 @@ contract MetaDog is ERC20, ERC20Burnable, Ownable {
     constructor() ERC20("Metaverse Dog", "MVDG") {
         _mint(msg.sender, 100000000000 * 10 ** decimals());
     }
-
-    function mint(address to, uint256 amount) public onlyOwner {
-        _mint(to, amount);
-    }
 }
